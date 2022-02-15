@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="ie=edge">
+    <title> Jogo do dado </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <form class="form-horizontal" id="formulario">
+        <fieldset>
+
+            <!-- Form Name -->
+            <center>
+                <legend>jogo dos dados</legend>
+            </center>
+
+            <!-- nome input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="textinput">Adicionar Player</label>
+                <div class="col-md-4">
+                    <input id="inputNome" name="textinput" type="text" placeholder="nome" class="form-control input-md">
+                </div>
+            </div>
+
+            <!-- dado input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="textinput">Número de Dados</label>
+                <div class="col-md-4">
+                    <input id="inputDados" name="textinput" type="number" placeholder="dado"
+                        class="form-control input-md">
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="singlebutton">Confirmar</label>
+                <div class="col-md-4">
+                    <button id="singlebutton" name="singlebutton" class="btn btn-primary"
+                        onclick="pegarInfo()">adicionar jogador</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+    <div>
+        <center>
+            <button value="Mostrar vencedor" id="winner" onclick="mostrarVencedor()">
+                <font color="white">Mostrar Vencedor</font>
+            </button>
+        </center>
+    </div>
+
+    <div class="num_players"></div>
+
+</body>
+
+<div>
+    <script src="dado.js"></script>
+</div>
+
+</html>
